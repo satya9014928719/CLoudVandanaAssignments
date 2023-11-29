@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Survey Form</title>
+  <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+ <div class="container">
+  <h2>Customer Survey Form</h2> 
+  <form id="surveyForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" placeholder="Enter first name" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" placeholder="Enter last name" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+
+    <label for="country">Country:</label>
+    <select id="country" required>
+      <option value="">Select Country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="india">India</option>
+                <option value="germany">Germany</option>
+                <option value="belgium">Belgium</option>
+                <option value="china">China</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="cuba">Cuba</option>
+                <option value="colombia">Colombia</option>
+                <option value="chile">Chile</option>
+      <!-- Add more countries as needed -->
+    </select>
+   <label>Gender</label>
+    <label class="checkbox">
+      <input type="radio" name="gender" value="male"> Male
+    </label>
+     <label class="checkbox">
+        <input type="radio" name="gender" value="female"> Female
+    </label>
+     <label class="checkbox">
+        <input type="radio" name="gender" value="other"> Other
+    </label>
+   
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" placeholder="Enter your profession" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="xyz@gmail.com" required>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" required>
+
+    <button type="submit" onclick="submitForm()">Submit</button>
+    <button type="button" class="reset" onclick="resetForm()">Reset</button>
+  </form>
+</div>
+
+  <div id="popup"></div>
+
+  <script src="surveyform.js"></script>
+</body>
+</html>
